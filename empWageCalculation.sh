@@ -4,9 +4,16 @@ do
 day[$i]=$((RANDOM %2))
 if [ ${day[$i]} == 1 ]
 then
-                wage[$i]=`expr 8  \* 20  `
- #               echo "Daily wage : ${wage[i]}"
+	full[$i]=$((RANDOM%2))
+	if [ ${full[i]} == 1 ]
+	then 
+               wage[$i]=`expr 8  \* 20  `
+	 elif [ ${full[i]} == 0 ]
+        then
+               wage[$i]=`expr 4  \* 20  `
+ 	fi
 else
+	full[$i]=0
         wage[$i]=0
 fi
 done

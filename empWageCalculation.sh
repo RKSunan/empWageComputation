@@ -1,3 +1,4 @@
+#! /bin/bash
 echo "Day   Employee Attandence"
 for i in $(seq 1 20)
 do
@@ -9,4 +10,5 @@ else
         echo " $i     Absent"
 fi
 done
+
 

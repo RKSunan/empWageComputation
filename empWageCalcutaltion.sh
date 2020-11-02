@@ -1,4 +1,3 @@
-echo "Welcome to Employee Wage Computation Program on Master Branch"
 echo "Day   Employee Attandence"
 for i in $(seq 1 20)
 do

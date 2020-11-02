@@ -1,6 +1,6 @@
 #! /bin/bash
         sum=0
-       echo "Daily_wage       Total_wage"
+       echo "Day         Daily_wage       Total_wage"
         for i in $(seq 1 100)
         do
         if [[  $totalhour -lt 200  && $i -le 20 ]]
@@ -25,7 +25,8 @@
         wage[$i]=0
         totalwage[i]=$sum
         fi
-        echo "${wage[$i]}              $sum"
+        echo "$i           ${wage[$i]}              $sum"
         fi
  done
+
 
